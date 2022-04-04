@@ -2,7 +2,10 @@
 Répertoire contenant nos travaux d'ihm
 
 ## Persona
- 
+
+### Calvin Yapi
+
+<img src="https://github.com/ClementLegros/IHM/blob/main/Persona/Calvin%20Yapi.png" />
  
 ### Hélène Lavoie
  
@@ -11,6 +14,4 @@ Répertoire contenant nos travaux d'ihm
 ### Kim Dojca
 
 <img src="https://github.com/ClementLegros/IHM/blob/main/Persona/Kim%20Dojca.png" />
-WRYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
-onichaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaan
-VIVE CLEMEEEEENT LEGROOOOOOOS
+
