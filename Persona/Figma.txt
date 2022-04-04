@@ -1,0 +1,66 @@
+Persona 1 :
+
+Identité :
+Kim DOKJA
+21 ans
+Non cadre
+Usage très correct en informatique
+
+Caractéristiques :
+Lecteur chevroné
+Très bon esprit de déduction
+
+Objectif :
+Ne pas se prendre la tête pour organiser des soirées
+
+Scénario :
+1. Cherche à faire des soirées avec ses amis
+2. Trouve l'application sur l'App Store
+3. S'inscrit sur l'application
+4. Utilise l'appli et trouve des personnes dans sa localisation proche
+
+---------------
+
+Persona 2 :
+
+Identité :
+Hélène Lavoie
+20 ans
+Étudiante
+Ne maitrise pas du tout l'informatique
+
+Caractéristiques :
+
+Objectif :
+Sociabiliser d'avantage
+
+Scénario :
+1. Cherche à créer la soirée de ses rêves
+2. Se renseigne sur le web pour chercher une appli et tombe sur la nôtre
+3. S'inscrit sur l'application
+4. Invite les amis qu'elle a rencontrés en ligne
+
+-----------------
+ 
+Persona 3 :
+
+Identité :
+Calvin Yapi
+22 ans
+Étudiant
+Maitrise parfaite de l'informatique
+
+Caractéristiques :
+Curieux
+Tête en l'air
+Aime les nouvelles technologies
+Regarde des documentaires
+
+Objectif :
+Passer plus de temps en famille
+
+Scénario :
+1. A entendu parler de l'application par un de ses proches
+2. Télécharge l'application
+3. Invite les gens de sa famille 
+4. Organise la soirée
