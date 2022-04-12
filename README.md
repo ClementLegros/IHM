@@ -15,3 +15,7 @@ Répertoire contenant nos travaux d'ihm
 
 <img src="https://github.com/ClementLegros/IHM/blob/main/Persona/Kim%20Dojca.png" />
 
+## Maquette 
+
+<img src="https://github.com/ClementLegros/IHM/blob/main/Maquette/maquette_ihm.PNG" />
+
