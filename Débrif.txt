@@ -1,0 +1,71 @@
+Mr Yapi.
+
+Temps : 42s.13
+tâche: créer une soirée
+
+commentaire de l'utilisateur Calvin Yap :
+
+Lors de l'ajout de la soirée spécifier les données de temps (Dire si c'est en heure ou en minutes)
+
+Observation:
+
+L'utilisateur n'a pas cliqué sur l'input de la date et à créer une soirée sans aucun participant
+Il faudrait faire en sorte que l'utilisateur ne puisse pas créer une soirée si les champs prérequis ne sont pas rentrer
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Mr. Hacquart
+
+Temps: 50s.17
+
+tâches : Ajouter un utilisateur à la soirée
+
+Commentaire :
+
+Lors de l'ajout de la soirée spécifier les données de temps (Dire si c'est en heure ou en minutes)
+Il faudrait l'impossibiliter de saisir une date inférieur à la date du jour.
+Mettre une limite aux champs d'heure et de durée
+vérifier tout les champs, tel comme widget iPhone
+
+Observation :
+
+A cliqué sur toute les options.
+
+Pour le lieux aider la saisie (avec google map ou juste aide à la syntaxe)
+
+Pour les saisies d'heures et durée des widgets comme sur l'incroyable IOS
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Mr. Trip
+
+Temps: 44s.22
+
+tâche : Créer une soirée
+
+Commentaire: 
+
+Le prototype est pas complet (manque de page d'inscription et de login)
+
+Observation :
+
+Lors de l'ajout de la soirée à oublié en premier lieu l'input de la Date
+
+
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Mr. Mezzache
+
+Temps : 56s.12
+
+
+Commentaire :
+
+Afficher le nombre de personne dans la fête et/ou une confirmation (interface création d'une soirée)
+
+Pas l'interet davoir deux boutons ajouté, ne pas afficher la barre home sur l'accueil, bouton retour ajout inviter
+
+4/5
+

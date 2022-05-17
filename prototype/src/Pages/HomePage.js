@@ -1,47 +1,70 @@
 import { Link } from "react-router-dom";
+import React from 'react'
+import Navbar from "../Components/navbar";
+import Topnav from "../Components/topnav";
 
-function HomePage() {
-    return (
-        <div className="flex flex-col justify-center bg-gray-300 items-center h-screen">
-            <h1 className="text-[30px] pb-8">Accueil</h1>
-            <div className="rounded-xl bg-gray-50 w-1/4 h-1/4 mb-8">
-                <h4 className="text-center pt-2">Soirées récentes :</h4>
-                <table class="table-fixed">
-                <thead>
-                    <tr>
-                    <th>Date</th>
-                    <th>Lieu</th>
-                    <th>Heure</th>
-                    <th>Durée</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                    <td>10/04/2022</td>
-                    <td>Orsay</td>
-                    <td>21H</td>
-                    <td>5H</td>
-                    </tr>
-                    <tr>
-                    <td>10/04/2022</td>
-                    <td>Orsay</td>
-                    <td>21H</td>
-                    <td>5H</td>
-                    </tr>
-                    <tr>
-                    <td>10/04/2022</td>
-                    <td>Orsay</td>
-                    <td>21H</td>
-                    <td>5H</td>
-                    </tr>
-                </tbody>
-                </table>
-            </div>
-            <div>
-            <Link to="/nouvellesoiree" className="rounded-xl bg-green-500 p-4">Nouvelle soirée</Link>
-            </div>
-        </div>
-    );
+class HomePage extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = { data: [] }
+    }
+
+    componentDidMount() {
+        if (this.props.data == null) {
+            return;
+        }
+        this.setState({ data: this.props.data })
+    }
+
+    render() {
+        return (
+            <>
+                <Topnav />
+                <div className="flex flex-col justify-center bg-gray-300 items-center h-screen w-screen">
+                    <h1 className="text-[30px] pb-8">Accueil</h1>
+                    <div className="rounded-xl bg-gray-50 w-80 h-1/4 mb-8 items-center flex flex-col">
+                        <h4 className="text-center pt-2">Soirées récentes :</h4>
+                        <table className="table-fixed">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th className="pl-3">Nom</th>
+                                    <th className="pl-3">Lieu</th>
+                                    <th className="pl-3">Heure</th>
+                                    <th className="pl-3">Durée</th>
+                                    <th className="pl-3">Invités</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {this.state.data.map(item => {
+                                    <tr>
+                                        <td>
+                                            {item.date}
+                                        </td>
+                                        <td>
+                                            {item.lieu}
+                                        </td>
+                                        <td>
+                                            {item.heure}
+                                        </td>
+                                        <td>
+                                            {item.duree}
+                                        </td>
+                                    </tr>
+                                })}
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <Link to="/nouvellesoiree" className="rounded-xl bg-green-500 p-4">Nouvelle soirée</Link>
+                    </div>
+                    <Navbar />
+                </div>
+            </>
+        );
+    }
+
 }
 
 export default HomePage;

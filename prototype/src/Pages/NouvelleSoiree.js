@@ -1,70 +1,53 @@
+import { Link, Route, Routes } from "react-router-dom";
+import React, { useState } from 'react';
+import HomePage from "./HomePage";
+import Navbar from "../Components/navbar";
+import Topnav from "../Components/topnav";
 
 
 function NouvelleSoiree() {
-    return (
 
+    const [soiree, setSoiree] = useState()
+
+    const addPersonne = () => {
+        let list = document.getElementById("listeInviter")
+        let ulpapa = document.createElement('li');
+        ulpapa.innerText = 'Papa';
+        list.appendChild(ulpapa);
+        let ulmama = document.createElement('li');
+        ulmama.innerText = 'Maman';
+        list.appendChild(ulmama);
+    }
+
+    return (
         <>
-        <div className="h-screen flex flex-col justify-center items-center bg-gray-300">
+        <Topnav />
+        <div className="h-screen flex flex-col items-center bg-gray-300">
             <p>Nouvelle soirée</p>
-            <div className="bg-gray-50 rounded-xl mx-12 my-12 w-1/4 h-1/4 pl-5 pt-2">
-                <p className="underline decoration-2 pb-5">Détails de la soirée</p>
-                <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-                    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-                        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                            <tr>
-                                <th>Date</th>
-                                <th>Lieu</th>
-                                <th>Heure</th>
-                                <th>Durée</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>25/04/2021</td>
-                                <td>Université Paris Saclay</td>
-                                <td>21h</td>
-                                <td>5 heures</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+            <div className="bg-gray-50 rounded-xl w-72 h-96 flex flex-col items-center mt-20">
+                <p>Date de la soirée</p>
+                <input className="border-2" type="date"></input>
+                <p>Heure</p>
+                <input className="border-2"></input>
+                <p>Durée</p>
+                <input className="border-2"></input>
+                <p>Lieu</p>
+                <input className="border-2"></input>
+                <p>Nom de la soirée</p>
+                <input className="border-2"></input>
+                <p className="mt-5">Liste des inviter</p>
+                
+                <Link to="/ajout" onClick={addPersonne} className="border-2 border-cyan-500 text-cyan-500 rounded-xl px-5">Ajouter des personnes a la soirée</Link>
+                <ul id="listeInviter">
+                    
+                </ul>
             </div>
-            <div className="bg-gray-50 rounded-xl mx-12 my-12 w-1/4 h-1/4 pl-5 pt-2">
-                <p className="underline decoration-2 pb-5">Liste invité</p>
-                <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-                    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-                        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                            <tr>
-                                <th>Nom</th>
-                                <th>Prénom</th>
-                                <th>Téléphone</th>
-                                <th>Mail</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Huge</td>
-                                <td>Babar</td>
-                                <td>0645782154</td>
-                                <td>hb@gmail.com</td>
-                            </tr>
-                            <tr>
-                                <td>Huge</td>
-                                <td>Babar</td>
-                                <td>0645782154</td>
-                                <td>hb@gmail.com</td>
-                            </tr>
-                            <tr>
-                                <td>Huge</td>
-                                <td>Babar</td>
-                                <td>0645782154</td>
-                                <td>hb@gmail.com</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+            <Link to="/" className="mt-4 border-2 border-cyan-500 text-cyan-500 rounded-xl px-8 py-4 bg-gray-50">
+                Creer la soirée
+            </Link>
+            <Navbar />
         </div >
+        
         </>
 
         
