@@ -3,23 +3,10 @@ import React from 'react'
 import Navbar from "../Components/navbar";
 import Topnav from "../Components/topnav";
 
-class HomePage extends React.Component {
 
-    constructor(props) {
-        super(props);
-        this.state = { data: [] }
-    }
-
-    componentDidMount() {
-        if (this.props.data == null) {
-            return;
-        }
-        this.setState({ data: this.props.data })
-    }
-
-    render() {
-        return (
-            <>
+const Test = () => {
+    return (
+        <>
                 <Topnav />
                 <div className="flex flex-col justify-center bg-gray-300 items-center h-screen w-screen">
                     <h1 className="text-[30px] pb-8">Accueil</h1>
@@ -62,9 +49,7 @@ class HomePage extends React.Component {
                     <Navbar />
                 </div>
             </>
-        );
-    }
-
+    );
 }
 
-export default HomePage;
+export default Test;
